@@ -9,7 +9,7 @@ api.map('gt', 'T');
 // an example to remove mapkey `Ctrl-i`
 api.unmap('<ctrl-i>');
 
-api.map('\', 'p');
+api.map('\\', 'p');
 
 // set theme
 settings.theme = `
