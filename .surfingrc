@@ -1,19 +1,70 @@
 // an example to create a new mapping `ctrl-y`
-api.mapkey('<ctrl-y>', 'Show me the money', function() {
-    Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
+api.mapkey('<ctrl-y>', 'test', function() {
+    Front.showPopup('github test');
 });
-
-// an example to replace `T` with `gt`, click `Default mappings` to see how `T` works.
-api.map('gt', 'T');
-
-// an example to remove mapkey `Ctrl-i`
-api.unmap('<ctrl-i>');
 
 // Set always insertMode when opening text box
 settings.insertMode = true;
 
-// Map \ to bypass
-api.map('\\', 'p');
+// Remaps
+removeSearchAliasX('b', 's');
+removeSearchAliasX('w', 's');
+
+mapkey('<?>', '#0enter PassThrough mode', function() {
+    Normal.passThrough();
+});
+
+unmap('F');
+unmap('B');
+
+const map_v = [
+    ['\\', 'p'] // Map \ to bypass
+    ['K', 'E'],
+    ['J', 'R'],
+    ['H', 'S'],
+    ['L', 'D'],
+    ['o', 'go'],
+    ['go', 't'],
+    ['<Ctrl-u>', 'e'],
+    ['<Ctrl-d>', 'd'],
+    ['d', 'x'],
+    ['oc', 'yt'],
+    ['yt', 'yl'],
+    ['Fm', 'cf'],
+    ['Fp', 'O'],
+    ['Ft', 'af'],
+    ['Fs', ';fs'],
+    ['Fb', 'gf'],
+    ['Fi', 'q'],
+    ['R', 'r'],
+    ['gd', 'oc'],
+    ['ge', 'sU'],
+    ['gE', 'su'],
+    ['u', 'X'],
+    ['gt', '<Ctrl-6>'],
+    ['p', 'cc'],
+    ['Ba', 'ab'],
+    ['Bd', ';db']
+    
+];
+const unmap_v = [
+    'cp', ';cp', ';ap', 'spa', 'spb', 'spd', 'sps', 'spc', 'swr', 'sql',
+    'C', ';s', '<Ctrl-i>', '<Alt-i>', 'ys', 'yj', ';pj', 'yd', 'yl',
+    'yQ', 'yp', 'on', 'gs', 'gxt', 'gxT', 'gx0', 'gx$', 'gxx', 'se', ';pp',
+    ';i', ';t', ';dh', 'on', 'ga', 'gb', 'gc', 'gd', 'gh', 'gk', 'ge', 'gn',
+    'si', '<Ctrl-Alt-d>', ';j', 'sfr', 'cf', 'af',';fs','gf','q','E',
+    'O', '<Ctrl-h>', '<Ctrl-j>', ';m', 'gi', 'cs', 'cS', 'e', 'x',
+    ';w', 'oc', 'su', 'sU', '<Ctrl-6>', 'S', 'D', 'cq', 'cc', 'Q',
+    ';q', 'ab', ';db', 'gr', 'sm'
+    
+];
+
+for (const [kn, ko] of map_v) {
+    map(kn, ko);
+}
+for (const k of unmap_v) {
+    unmap(k);
+}
 
 // set theme
 settings.theme = `
