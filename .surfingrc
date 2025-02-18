@@ -7,13 +7,12 @@ api.mapkey('<ctrl-y>', 'test', function() {
 settings.insertMode = true;
 
 // Remaps
-
 const map_v = [
     ['\\', 'p'], // Map \ to bypass
-    ['K', 'E'], // Map
-    ['J', 'R'],
-    // ['H', 'S'],
-    // ['L', 'D'],
+    ['J', 'E'], // Map tab movement
+    ['K', 'R'],
+    ['H', 'S'], // Map history movement
+    ['L', 'D'],
     // ['o', 'go'],
     // ['go', 't'],
     // ['<Ctrl-u>', 'e'],
