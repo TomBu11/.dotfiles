@@ -9,7 +9,7 @@ settings.insertMode = true;
 // Remaps
 
 const map_v = [
-    ['\\', 'p'] // Map \ to bypass
+    ['\\', 'p'], // Map \ to bypass
     ['K', 'E'], // Map
     ['J', 'R'],
     // ['H', 'S'],
