@@ -7,8 +7,6 @@ api.mapkey('<ctrl-y>', 'test', function() {
 settings.insertMode = true;
 
 // Remaps
-// removeSearchAliasX('b', 's');
-// removeSearchAliasX('w', 's');
 
 unmap('F');
 unmap('B');
