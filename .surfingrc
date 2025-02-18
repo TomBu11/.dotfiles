@@ -15,49 +15,47 @@ const map_v = [
     ['\\', 'p'] // Map \ to bypass
     ['K', 'E'], // Map
     ['J', 'R'],
-    ['H', 'S'],
-    ['L', 'D'],
-    ['o', 'go'],
-    ['go', 't'],
-    ['<Ctrl-u>', 'e'],
-    ['<Ctrl-d>', 'd'],
-    ['d', 'x'],
-    ['oc', 'yt'],
-    ['yt', 'yl'],
-    ['Fm', 'cf'],
-    ['Fp', 'O'],
-    ['Ft', 'af'],
-    ['Fs', ';fs'],
-    ['Fb', 'gf'],
-    ['Fi', 'q'],
-    ['R', 'r'],
-    ['gd', 'oc'],
-    ['ge', 'sU'],
-    ['gE', 'su'],
-    ['u', 'X'],
-    ['gt', '<Ctrl-6>'],
-    ['p', 'cc'],
-    ['Ba', 'ab'],
-    ['Bd', ';db']
-    
+    // ['H', 'S'],
+    // ['L', 'D'],
+    // ['o', 'go'],
+    // ['go', 't'],
+    // ['<Ctrl-u>', 'e'],
+    // ['<Ctrl-d>', 'd'],
+    // ['d', 'x'],
+    // ['oc', 'yt'],
+    // ['yt', 'yl'],
+    // ['Fm', 'cf'],
+    // ['Fp', 'O'],
+    // ['Ft', 'af'],
+    // ['Fs', ';fs'],
+    // ['Fb', 'gf'],
+    // ['Fi', 'q'],
+    // ['R', 'r'],
+    // ['gd', 'oc'],
+    // ['ge', 'sU'],
+    // ['gE', 'su'],
+    // ['u', 'X'],
+    // ['gt', '<Ctrl-6>'],
+    // ['p', 'cc'],
+    // ['Ba', 'ab'],
+    // ['Bd', ';db']
 ];
 const unmap_v = [
-    'cp', ';cp', ';ap', 'spa', 'spb', 'spd', 'sps', 'spc', 'swr', 'sql',
-    'C', '<Ctrl-i>', '<Alt-i>', 'ys', 'yj', ';pj', 'yd', 'yl',
-    'yQ', 'yp', 'on', 'gs', 'gxt', 'gxT', 'gx0', 'gx$', 'gxx', 'se', ';pp',
-    ';i', ';t', ';dh', 'on', 'ga', 'gb', 'gc', 'gd', 'gh', 'gk', 'ge', 'gn',
-    'si', '<Ctrl-Alt-d>', ';j', 'sfr', 'cf', 'af',';fs','gf','q','E',
-    'O', '<Ctrl-h>', '<Ctrl-j>', ';m', 'gi', 'cs', 'cS', 'e', 'x',
-    ';w', 'oc', 'su', 'sU', '<Ctrl-6>', 'S', 'D', 'cq', 'cc', 'Q',
-    ';q', 'ab', ';db', 'gr', 'sm'
-    
+//     'cp', ';cp', ';ap', 'spa', 'spb', 'spd', 'sps', 'spc', 'swr', 'sql',
+//     'C', '<Ctrl-i>', '<Alt-i>', 'ys', 'yj', ';pj', 'yd', 'yl',
+//     'yQ', 'yp', 'on', 'gs', 'gxt', 'gxT', 'gx0', 'gx$', 'gxx', 'se', ';pp',
+//     ';i', ';t', ';dh', 'on', 'ga', 'gb', 'gc', 'gd', 'gh', 'gk', 'ge', 'gn',
+//     'si', '<Ctrl-Alt-d>', ';j', 'sfr', 'cf', 'af',';fs','gf','q','E',
+//     'O', '<Ctrl-h>', '<Ctrl-j>', ';m', 'gi', 'cs', 'cS', 'e', 'x',
+//     ';w', 'oc', 'su', 'sU', '<Ctrl-6>', 'S', 'D', 'cq', 'cc', 'Q',
+//     ';q', 'ab', ';db', 'gr', 'sm'
 ];
 
 for (const [kn, ko] of map_v) {
-    map(kn, ko);
+    api.map(kn, ko);
 }
 for (const k of unmap_v) {
-    unmap(k);
+    api.unmap(k);
 }
 
 // set theme
