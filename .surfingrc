@@ -7,19 +7,15 @@ api.mapkey('<ctrl-y>', 'test', function() {
 settings.insertMode = true;
 
 // Remaps
-removeSearchAliasX('b', 's');
-removeSearchAliasX('w', 's');
-
-mapkey('<?>', '#0enter PassThrough mode', function() {
-    Normal.passThrough();
-});
+// removeSearchAliasX('b', 's');
+// removeSearchAliasX('w', 's');
 
 unmap('F');
 unmap('B');
 
 const map_v = [
     ['\\', 'p'] // Map \ to bypass
-    ['K', 'E'],
+    ['K', 'E'], // Map
     ['J', 'R'],
     ['H', 'S'],
     ['L', 'D'],
@@ -49,7 +45,7 @@ const map_v = [
 ];
 const unmap_v = [
     'cp', ';cp', ';ap', 'spa', 'spb', 'spd', 'sps', 'spc', 'swr', 'sql',
-    'C', ';s', '<Ctrl-i>', '<Alt-i>', 'ys', 'yj', ';pj', 'yd', 'yl',
+    'C', '<Ctrl-i>', '<Alt-i>', 'ys', 'yj', ';pj', 'yd', 'yl',
     'yQ', 'yp', 'on', 'gs', 'gxt', 'gxT', 'gx0', 'gx$', 'gxx', 'se', ';pp',
     ';i', ';t', ';dh', 'on', 'ga', 'gb', 'gc', 'gd', 'gh', 'gk', 'ge', 'gn',
     'si', '<Ctrl-Alt-d>', ';j', 'sfr', 'cf', 'af',';fs','gf','q','E',
