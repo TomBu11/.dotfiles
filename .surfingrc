@@ -9,6 +9,10 @@ api.map('gt', 'T');
 // an example to remove mapkey `Ctrl-i`
 api.unmap('<ctrl-i>');
 
+// Set always insertMode when opening text box
+settings.insertMode = true;
+
+// Map \ to bypass
 api.map('\\', 'p');
 
 // set theme
