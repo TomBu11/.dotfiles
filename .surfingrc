@@ -1,5 +1,4 @@
 debugger;
-map();
 
 // an example to create a new mapping `ctrl-y`
 api.mapkey('<ctrl-y>', 'test', function() {
@@ -96,29 +95,3 @@ settings.theme = `
 #sk_status, #sk_find {
     font-size: 20pt;
 }`;
-
-// Tiny MCE salis fix
-
-document.addEventListener('focus', function(event) {
-    if (event.target.matches('input, textarea, [contenteditable="true"]')) {
-        Normal.passThrough();
-    }
-}, true);
-
-// Allow Surfingkeys to work inside iframes automatically
-settings.enableSelector = '#tinymce, .tox-tinymce'
-
-document.addEventListener('click', function (event) {
-    debugger;
-    let iframe = document.querySelector('.tox-tinymce iframe');
-    if (iframe && event.target === iframe) {
-        let iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-        if (iframeDoc && iframeDoc.body.id === 'tinymce') {
-            iframeDoc.addEventListener('focus', function () {
-                Normal.passThrough();  // Enter Insert mode
-            });
-        }
-    }
-});
-
-debugger;
