@@ -94,14 +94,13 @@ settings.theme = `
     font-size: 20pt;
 }`;
 
-// Tiny MCE fix
+// Tiny MCE salis fix
 
 function enableInsertModeForTinyMCE() {
     document.addEventListener('focusin', function (event) {
-        if (event.target.tagName === 'IFRAME') {
-            let iframe = event.target;
+        let iframe = document.querySelector('.tox-tinymce iframe');
+        if (iframe && event.target === iframe) {
             let iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-
             if (iframeDoc && iframeDoc.body.id === 'tinymce') {
                 iframeDoc.addEventListener('focusin', function () {
                     Normal.passThrough();  // Enter Insert mode
@@ -112,3 +111,4 @@ function enableInsertModeForTinyMCE() {
 }
 
 enableInsertModeForTinyMCE();
+
