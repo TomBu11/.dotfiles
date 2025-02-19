@@ -104,3 +104,18 @@ document.addEventListener('focus', function(event) {
 
 // Allow Surfingkeys to work inside iframes automatically
 settings.enableSelector = '#tinymce, .tox-tinymce'
+
+document.addEventListener('click', function (event) {
+    debugger;
+    let iframe = document.querySelector('.tox-tinymce iframe');
+    if (iframe && event.target === iframe) {
+        let iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+        if (iframeDoc && iframeDoc.body.id === 'tinymce') {
+            iframeDoc.addEventListener('focus', function () {
+                Normal.passThrough();  // Enter Insert mode
+            });
+        }
+    }
+});
+
+debugger;
