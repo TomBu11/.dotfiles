@@ -1,3 +1,6 @@
+debugger;
+map();
+
 // an example to create a new mapping `ctrl-y`
 api.mapkey('<ctrl-y>', 'test', function() {
     Front.showPopup('github test');
