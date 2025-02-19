@@ -37,6 +37,7 @@ const map_v = [
     // ['Bd', ';db']
 ];
 const unmap_v = [
+    'ob'
     // 'cp', ';cp', ';ap', 'spa', 'spb', 'spd', 'sps', 'spc', 'swr', 'sql',
     // 'C', '<Ctrl-i>', '<Alt-i>', 'ys', 'yj', ';pj', 'yd', 'yl',
     // 'yQ', 'yp', 'on', 'gs', 'gxt', 'gxT', 'gx0', 'gx$', 'gxx', 'se', ';pp',
@@ -92,4 +93,22 @@ settings.theme = `
 #sk_status, #sk_find {
     font-size: 20pt;
 }`;
-// click `Save` button to make above settings to take effect.</ctrl-i></ctrl-y>
+
+// Tiny MCE fix
+
+function enableInsertModeForTinyMCE() {
+    document.addEventListener('focusin', function (event) {
+        if (event.target.tagName === 'IFRAME') {
+            let iframe = event.target;
+            let iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+            if (iframeDoc && iframeDoc.body.id === 'tinymce') {
+                iframeDoc.addEventListener('focusin', function () {
+                    Normal.passThrough();  // Enter Insert mode
+                });
+            }
+        }
+    });
+}
+
+enableInsertModeForTinyMCE();
