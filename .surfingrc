@@ -96,19 +96,11 @@ settings.theme = `
 
 // Tiny MCE salis fix
 
-function enableInsertModeForTinyMCE() {
-    document.addEventListener('focusin', function (event) {
-        let iframe = document.querySelector('.tox-tinymce iframe');
-        if (iframe && event.target === iframe) {
-            let iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-            if (iframeDoc && iframeDoc.body.id === 'tinymce') {
-                iframeDoc.addEventListener('focusin', function () {
-                    Normal.passThrough();  // Enter Insert mode
-                });
-            }
-        }
-    });
-}
+document.addEventListener('focus', function(event) {
+    if (event.target.matches('input, textarea, [contenteditable="true"]')) {
+        Normal.passThrough();
+    }
+}, true);
 
-enableInsertModeForTinyMCE();
-
+// Allow Surfingkeys to work inside iframes automatically
+settings.enableAutoFocus = true;
