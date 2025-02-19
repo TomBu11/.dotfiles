@@ -103,4 +103,4 @@ document.addEventListener('focus', function(event) {
 }, true);
 
 // Allow Surfingkeys to work inside iframes automatically
-settings.enableSelector = '#tinymce'
+settings.enableSelector = '#tinymce, .tox-tinymce'
