@@ -1,13 +1,3 @@
-debugger;
-
-// an example to create a new mapping `ctrl-y`
-api.mapkey('<ctrl-y>', 'test', function() {
-    Front.showPopup('github test');
-});
-
-// Set always insertMode when opening text box
-settings.insertMode = true;
-
 // Remaps
 const map_v = [
     ['\\', 'p'], // Map \ to bypass
@@ -95,3 +85,11 @@ settings.theme = `
 #sk_status, #sk_find {
     font-size: 20pt;
 }`;
+
+// let iframe = document.querySelector('.tox-tinymce iframe');
+// if (iframe) {
+//     let iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+//     iframeDoc.addEventListener('click', function (event) {
+//         debugger;
+//     });
+// }
