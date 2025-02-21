@@ -51,7 +51,7 @@ settings.blocklist = {
     "about:srcdoc": 1
 }
 
-settings.blocklistPattern = /^about:srcdoc$/i;
+settings.blocklistPattern = /.*:\/\/.*\/clientlog_description_ifr/;
 
 
 // set theme
