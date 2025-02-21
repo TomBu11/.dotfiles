@@ -47,12 +47,7 @@ for (const k of unmap_v) {
     api.unmap(k);
 }
 
-settings.blocklist = {
-    "about:srcdoc": 1
-}
-
 settings.blocklistPattern = /.*:\/\/.*\/clientlog_description_ifr/;
-
 
 // set theme
 settings.theme = `
