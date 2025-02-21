@@ -47,7 +47,7 @@ for (const k of unmap_v) {
     api.unmap(k);
 }
 
-settings.blocklistPattern = /salis\.rocksalt\.cc:12444\//i;
+settings.blocklistPattern = /^salis\.rocksalt\.cc:12444\/$/i;
 
 
 // set theme
