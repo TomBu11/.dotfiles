@@ -47,20 +47,8 @@ for (const k of unmap_v) {
     api.unmap(k);
 }
 
-setTimeout(() => {
-    let iframe = document.querySelector('iframe#clientlog_description_ifr');
-    if (iframe) {
-        iframe.onload = () => {
-            iframe.contentWindow.postMessage({ disableSurfingKeys: true }, '*');
-        };
-    }
-}, 2000);
+settings.blocklistPattern = /salis\.rocksalt\.cc:12444\//i;
 
-window.addEventListener("message", (event) => {
-    if (event.data && event.data.disableSurfingKeys) {
-        settings.blocklistPattern = /.*/; // Disable SurfingKeys inside this iframe
-    }
-});
 
 // set theme
 settings.theme = `
