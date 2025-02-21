@@ -47,6 +47,8 @@ for (const k of unmap_v) {
     api.unmap(k);
 }
 
+settings.blocklistPattern = /salis\.rocksalt\.cc:12444\/sites\/\d+\/clientlogs\/new/i;
+
 // set theme
 settings.theme = `
 .sk_theme {
