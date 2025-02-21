@@ -47,8 +47,20 @@ for (const k of unmap_v) {
     api.unmap(k);
 }
 
-settings.blocklistPattern = /salis\.rocksalt\.cc:12444\/(sites\/\d+\/clientlogs\/new|clientlogs\/\d+\/edit)/i;
+setTimeout(() => {
+    let iframe = document.querySelector('iframe#clientlog_description_ifr');
+    if (iframe) {
+        iframe.onload = () => {
+            iframe.contentWindow.postMessage({ disableSurfingKeys: true }, '*');
+        };
+    }
+}, 2000);
 
+window.addEventListener("message", (event) => {
+    if (event.data && event.data.disableSurfingKeys) {
+        settings.blocklistPattern = /.*/; // Disable SurfingKeys inside this iframe
+    }
+});
 
 // set theme
 settings.theme = `
