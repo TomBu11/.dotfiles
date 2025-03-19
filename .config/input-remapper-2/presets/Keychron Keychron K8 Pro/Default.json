@@ -1,0 +1,71 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 54,
+                "origin_hash": "ab12e6bee1b9b72a6f5f236811b6a92e"
+            },
+            {
+                "type": 1,
+                "code": 42,
+                "origin_hash": "ab12e6bee1b9b72a6f5f236811b6a92e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Caps_Lock",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 42,
+                "origin_hash": "ab12e6bee1b9b72a6f5f236811b6a92e"
+            },
+            {
+                "type": 1,
+                "code": 54,
+                "origin_hash": "ab12e6bee1b9b72a6f5f236811b6a92e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Caps_Lock",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 54,
+                "origin_hash": "ab12e6bee1b9b72a6f5f236811b6a92e"
+            },
+            {
+                "type": 1,
+                "code": 3,
+                "origin_hash": "ab12e6bee1b9b72a6f5f236811b6a92e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Shift_R + apostrophe",
+        "name": "Shift R + 2",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 42,
+                "origin_hash": "ab12e6bee1b9b72a6f5f236811b6a92e"
+            },
+            {
+                "type": 1,
+                "code": 40,
+                "origin_hash": "ab12e6bee1b9b72a6f5f236811b6a92e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Shift_L + 2",
+        "mapping_type": "key_macro"
+    }
+]

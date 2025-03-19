@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set dotfiles directory (assuming the script runs from within the cloned repo)
-DOTFILES_DIR="$HOME/.dotfiles/"
+DOTFILES_DIR="$HOME/.dotfiles"
 BACKUP_DIR="$HOME/.dotfiles_backup"
 
 # List of config files and directories to symlink
@@ -10,10 +10,43 @@ dotfiles=(
     .nvimrc
     .vimrc
     .zshrc
+    .gitconfig
+    .config/cinnamon
+    .config/copyq
+    .config/discord
+    .config/Docker\ Desktop
+    .config/flameshot
+    .config/gtk-3.0
+    .config/i3
+    .config/input-remapper-2
+    .config/mintmenu
+    .config/nemo
+    .config/neofetch
+    .config/nvim
+    .config/rofi
+    .config/teamviewer
+    .config/tmux
+    .config/remmina
+    .config/VirtualBox
+    .config/xed
 )
 
 # List of packages to install for Linux Mint
 packages=(
+    # cider
+    # code
+    # copyq
+    # discord
+    # displaylink-driver
+    # fzf
+    # git
+    # gpart
+    # pip
+    # remmina
+    # rofi
+    # xdotool
+    # z
+    # zsh
 )
 
 # Install necessary packages using apt

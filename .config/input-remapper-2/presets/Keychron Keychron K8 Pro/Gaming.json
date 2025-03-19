@@ -1,0 +1,50 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 31,
+                "origin_hash": "ab12e6bee1b9b72a6f5f236811b6a92e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Left",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 32,
+                "origin_hash": "ab12e6bee1b9b72a6f5f236811b6a92e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Down",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 18,
+                "origin_hash": "ab12e6bee1b9b72a6f5f236811b6a92e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Up",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 33,
+                "origin_hash": "ab12e6bee1b9b72a6f5f236811b6a92e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Right",
+        "mapping_type": "key_macro"
+    }
+]
