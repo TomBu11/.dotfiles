@@ -6,6 +6,10 @@ BACKUP_DIR="$HOME/.dotfiles_backup"
 
 # List of config files to symlink
 dotfiles=(
+    .bashrc
+    .nvimrc
+    .vimrc
+    .zshrc
 )
 
 # List of packages to install for Linux Mint
