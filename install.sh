@@ -27,9 +27,14 @@ for target in "${dotfiles[@]}"; do
     old="$HOME/$target"
     new="$DOTFILES_DIR/$target"
 
-    if [ -e "$old" ] || [ -L "$old" ]; then
+    if [ -e "$old" ]; then
         echo "Backing up $target to $BACKUP_DIR"
         mv "$old" "$BACKUP_DIR/"
+    fi
+
+    if [ -L "$old" ]; then
+        echo "Removing existing symlink $old"
+        rm "$old"
     fi
 
     echo "Symlinking $new to $old"
