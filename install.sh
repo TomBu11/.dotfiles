@@ -14,7 +14,6 @@ dotfiles=(
     .config/cinnamon
     .config/copyq
     .config/discord
-    .config/Docker\ Desktop
     .config/flameshot
     .config/gtk-3.0
     .config/i3
