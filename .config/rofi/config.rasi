@@ -1,0 +1,16 @@
+configuration{
+    modi: "run,drun,window";
+    font: "JetBrainsMono Nerd Font 10";
+    show-icons: true;
+    terminal: "zsh";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    display-run: "   Run ";
+    display-drun: "   Apps ";
+    display-window: "   Window";
+    sidebar-mode: true;
+}
+
+@theme "catppuccin-mocha"
+

@@ -1,0 +1,26 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 276,
+                "origin_hash": "5ec14ba5cc209642898bcc551292dcb0"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "F13",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 275,
+                "origin_hash": "5ec14ba5cc209642898bcc551292dcb0"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "XF86Tools",
+        "mapping_type": "key_macro"
+    }
+]

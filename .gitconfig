@@ -1,0 +1,8 @@
+[user]
+	name = Tom
+	email = tom@rocksalt.cc
+[init]
+	default = Branch
+	defaultBranch = main
+[core]
+	editor = nvim

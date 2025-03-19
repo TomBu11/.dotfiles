@@ -1,0 +1,83 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 42,
+                "origin_hash": "85e9d696999f28cc5d1cefa1abf9f4f7"
+            },
+            {
+                "type": 1,
+                "code": 54,
+                "origin_hash": "85e9d696999f28cc5d1cefa1abf9f4f7"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Caps_Lock",
+        "name": "",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 54,
+                "origin_hash": "85e9d696999f28cc5d1cefa1abf9f4f7"
+            },
+            {
+                "type": 1,
+                "code": 42,
+                "origin_hash": "85e9d696999f28cc5d1cefa1abf9f4f7"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Caps_Lock",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 42,
+                "origin_hash": "85e9d696999f28cc5d1cefa1abf9f4f7"
+            },
+            {
+                "type": 1,
+                "code": 40,
+                "origin_hash": "85e9d696999f28cc5d1cefa1abf9f4f7"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Shift_L + 2",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 54,
+                "origin_hash": "85e9d696999f28cc5d1cefa1abf9f4f7"
+            },
+            {
+                "type": 1,
+                "code": 3,
+                "origin_hash": "85e9d696999f28cc5d1cefa1abf9f4f7"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Shift_R + apostrophe",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "85e9d696999f28cc5d1cefa1abf9f4f7"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTCTRL",
+        "mapping_type": "key_macro"
+    }
+]
