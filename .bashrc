@@ -116,11 +116,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-sudo() {
-    su -c "$*"
-}
+# sudo() {
+#     su -c "$*"
+#}
 
-source "/etc/profile.d/rvm.sh"
+# source "/etc/profile.d/rvm.sh"
 
 export PATH=$PATH:~/.local/bin
 export CHROME_PASSWORD_STORE=gnome
