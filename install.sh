@@ -11,9 +11,10 @@ dotfiles=(
     .vimrc
     .zshrc
     .gitconfig
+    .oh-my-zsh
     .config/cinnamon
-    .config/copyq
-    .config/discord
+    .config/copyq/copyq.conf
+    .config/discord/settings.json
     .config/flameshot
     .config/gtk-3.0
     .config/i3
@@ -58,18 +59,21 @@ mkdir -p "$BACKUP_DIR"
 for target in "${dotfiles[@]}"; do
     old="$HOME/$target"
     new="$DOTFILES_DIR/$target"
+    backup="$BACKUP_DIR/$target"
 
     if [ -e "$old" ]; then
-        echo "Backing up $target to $BACKUP_DIR"
-        mv "$old" "$BACKUP_DIR/"
+        if [ -e "$new" ]; then
+            echo "Backing up $target to $BACKUP_DIR"
+            mkdir -p "$(dirname "$backup")"
+            mv "$old" "$backup"
+        else
+            echo "Config not in dotfiles repo adding"
+            mkdir -p "$(dirname "$new")"
+            mv "$old" "$new"
+        fi
     fi
 
-    if [ -L "$old" ]; then
-        echo "Removing existing symlink $old"
-        rm "$old"
-    fi
-
-    echo "Symlinking $new to $old"
+    echo -e "Symlinking $new to $old\n"
     ln -s "$new" "$old"
 done
 
