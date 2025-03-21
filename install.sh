@@ -11,7 +11,7 @@ dotfiles=(
     .vimrc
     .zshrc
     .gitconfig
-    .oh-my-zsh
+    .oh-my-zsh/custom
     .config/cinnamon
     .config/copyq/copyq.conf
     .config/discord/settings.json
