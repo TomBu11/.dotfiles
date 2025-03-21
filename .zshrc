@@ -110,9 +110,9 @@ bindkey -v
 bindkey '^H' backward-kill-word
 bindkey '5~' kill-word
 
-sudo() {
-    su -c "$*"
-}
+# sudo() {
+#     su -c "$*"
+# }
 
 EDITOR="nvim"
 
@@ -120,7 +120,7 @@ source /usr/share/doc/fzf/examples/key-bindings.zsh
 
 source /usr/share/doc/fzf/examples/completion.zsh
 
-source "/etc/profile.d/rvm.sh"
+# source "/etc/profile.d/rvm.sh"
 
 export PATH=$PATH:/usr/local/go/bin
 
