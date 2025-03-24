@@ -14,6 +14,7 @@ dotfiles=(
     .oh-my-zsh/custom
     .config/cinnamon
     .config/copyq/copyq.conf
+    .config/copyq/themes/mint.ini
     .config/discord/settings.json
     .config/flameshot
     .config/gtk-3.0
