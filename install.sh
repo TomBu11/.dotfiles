@@ -28,7 +28,6 @@ dotfiles=(
     .config/teamviewer
     .config/tmux
     .config/remmina
-    .config/VirtualBox
     .config/xed
 )
 
@@ -61,6 +60,12 @@ for target in "${dotfiles[@]}"; do
     old="$HOME/$target"
     new="$DOTFILES_DIR/$target"
     backup="$BACKUP_DIR/$target"
+
+    # Check if the target is already a symlink to the correct location
+    if [ -L "$old" ] && [ "$(readlink -f "$old")" = "$(readlink -f "$new")" ]; then
+        echo -e "Skipping $target: Already correctly symlinked\n"
+        continue
+    fi
 
     if [ -e "$old" ]; then
         if [ -e "$new" ]; then
