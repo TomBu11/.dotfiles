@@ -1,13 +1,13 @@
 {
-    "version": "2.0.0",
+    "version": "2.0.1",
     "autoload": {
         "Razer Razer Viper 8KHz": "new preset",
         "ITE Tech. Inc. ITE Device(8910) Keyboard": "Default",
         "Corsair CORSAIR KATAR PRO XT Gaming Mouse": "Main",
-        "Keychron Keychron K8 Pro": "Main",
+        "Keychron Keychron K8 Pro": "Default",
         "Logitech ERGO M575": "new preset",
         "SSCYPL Wireless-Receiver": "new preset",
-        "XCTECH USB Gaming Mouse": "new preset"
+        "XCTECH USB Gaming Mouse": "Default"
     },
     "macros": {
         "keystroke_sleep_ms": 10
