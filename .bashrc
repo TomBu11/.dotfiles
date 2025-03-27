@@ -122,5 +122,7 @@ fi
 
 # source "/etc/profile.d/rvm.sh"
 
+export QT_QPA_PLATFORMTHEME=gtk2
+
 export PATH=$PATH:~/.local/bin
 export CHROME_PASSWORD_STORE=gnome

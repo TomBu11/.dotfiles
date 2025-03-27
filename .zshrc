@@ -122,6 +122,8 @@ source /usr/share/doc/fzf/examples/completion.zsh
 
 # source "/etc/profile.d/rvm.sh"
 
+export QT_QPA_PLATFORMTHEME=gtk2
+
 export PATH=$PATH:/usr/local/go/bin
 
 export PATH="$PATH:$(go env GOPATH)/bin"
