@@ -1,7 +1,7 @@
 [desktop-monitor-0]
 nemo-icon-view-keep-aligned=true
 nemo-icon-view-auto-layout=true
-nemo-icon-view-layout-timestamp=1742549209
+nemo-icon-view-layout-timestamp=1747293668
 
 [150 GB Volume.volume]
 nemo-icon-position=71,8
@@ -31,7 +31,7 @@ nemo-icon-position-timestamp=1725024126
 nemo-icon-position=71,8
 monitor=0
 icon-scale=1
-nemo-icon-position-timestamp=1742221411
+nemo-icon-position-timestamp=1746717581
 
 [64 GB Volume.volume]
 nemo-icon-position=71,8
@@ -52,16 +52,16 @@ icon-scale=1
 nemo-icon-position-timestamp=1738932719
 
 [USB STICK.volume]
-nemo-icon-position=71,208
+nemo-icon-position=71,8
 monitor=0
 icon-scale=1
-nemo-icon-position-timestamp=1741768413
+nemo-icon-position-timestamp=1746191039
 
 [Tom - 128GB.volume]
-nemo-icon-position=71,108
+nemo-icon-position=71,8
 monitor=0
 icon-scale=1
-nemo-icon-position-timestamp=1741770913
+nemo-icon-position-timestamp=1746535163
 
 [LINUX MINT.volume]
 nemo-icon-position=71,8
@@ -88,16 +88,16 @@ icon-scale=1
 nemo-icon-position-timestamp=1725982442
 
 [UEFI_NTFS.volume]
-nemo-icon-position=71,108
+nemo-icon-position=71,208
 monitor=0
 icon-scale=1
-nemo-icon-position-timestamp=1741364104
+nemo-icon-position-timestamp=1746543881
 
 [CCCOMA_X64FRE_EN-GB_DV9.volume]
 nemo-icon-position=71,8
 monitor=0
 icon-scale=1
-nemo-icon-position-timestamp=1741364104
+nemo-icon-position-timestamp=1746543881
 
 [DTBFAT0.volume]
 nemo-icon-position=71,8
@@ -112,10 +112,10 @@ icon-scale=1
 nemo-icon-position-timestamp=1738598732
 
 [Ventoy.volume]
-nemo-icon-position=71,308
+nemo-icon-position=71,108
 monitor=0
 icon-scale=1
-nemo-icon-position-timestamp=1742385910
+nemo-icon-position-timestamp=1747051377
 
 [810 GB Volume.volume]
 nemo-icon-position=71,8
@@ -133,7 +133,7 @@ icon-scale=1
 nemo-icon-position=71,8
 monitor=0
 icon-scale=1
-nemo-icon-position-timestamp=1739276838
+nemo-icon-position-timestamp=1747150200
 
 [iPhone.volume]
 nemo-icon-position=71,108
@@ -148,10 +148,10 @@ icon-scale=1
 nemo-icon-position-timestamp=1739555292
 
 [999 MB Volume.volume]
-nemo-icon-position=71,208
+nemo-icon-position=71,8
 monitor=0
 icon-scale=1
-nemo-icon-position-timestamp=1742405728
+nemo-icon-position-timestamp=1744114280
 
 [MusicMP3.volume]
 nemo-icon-position=71,8
@@ -208,10 +208,10 @@ icon-scale=1
 nemo-icon-position-timestamp=1742405957
 
 [KINGSTON.volume]
-nemo-icon-position=71,108
+nemo-icon-position=71,8
 monitor=0
 icon-scale=1
-nemo-icon-position-timestamp=1741712444
+nemo-icon-position-timestamp=1743755653
 
 [Install Big Sur (11).volume]
 nemo-icon-position=71,108
@@ -280,10 +280,10 @@ icon-scale=1
 nemo-icon-position-timestamp=1741614989
 
 [Ventoy.volume.2]
-nemo-icon-position=71,208
+nemo-icon-position=71,8
 monitor=0
 icon-scale=1
-nemo-icon-position-timestamp=1742398795
+nemo-icon-position-timestamp=1746197219
 
 [Ventoy.volume.3]
 nemo-icon-position=71,108
@@ -296,3 +296,39 @@ nemo-icon-position=71,8
 monitor=0
 icon-scale=1
 nemo-icon-position-timestamp=1742405854
+
+[tom@rocksalt.cc.volume]
+nemo-icon-position=71,8
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1747293669
+
+[GI6479 Wipeme.volume]
+nemo-icon-position=86,8
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1744114617
+
+[524 MB Volume.volume]
+nemo-icon-position=71,8
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1744118787
+
+[WBLAH.volume]
+nemo-icon-position=71,108
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1745589422
+
+[Blah.volume]
+nemo-icon-position=71,8
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1745589422
+
+[VTOYEFI.volume]
+nemo-icon-position=71,108
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1746197555
