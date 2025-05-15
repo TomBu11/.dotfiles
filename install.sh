@@ -11,7 +11,7 @@ dotfiles=(
     .vimrc
     .zshrc
     .gitconfig
-    .oh-my-zsh/custom
+    .oh-my-zsh
     .config/cinnamon
     .config/copyq/copyq.conf
     .config/copyq/themes
@@ -77,10 +77,11 @@ for target in "${dotfiles[@]}"; do
             mkdir -p "$(dirname "$new")"
             mv "$old" "$new"
         fi
+        echo -e "Symlinking $new to $old\n"
+        ln -s "$new" "$old"
+    else
+        echo -e "Config $old not found\n"
     fi
-
-    echo -e "Symlinking $new to $old\n"
-    ln -s "$new" "$old"
 done
 
 echo "Dotfiles installation complete."
