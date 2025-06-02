@@ -60,7 +60,7 @@ COMPLETION_WAITING_DOTS="true"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='mvim'
+  export EDITOR='nvim'
 fi
 
 if [[ -n $SSH_CONNECTION ]]; then
@@ -110,25 +110,19 @@ bindkey -v
 bindkey '^H' backward-kill-word
 bindkey '5~' kill-word
 
-# sudo() {
-#     su -c "$*"
-# }
-
-EDITOR="nvim"
-
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 
 source /usr/share/doc/fzf/examples/completion.zsh
 
 # source "/etc/profile.d/rvm.sh"
 
+source $HOME/.oh-my-zsh/custom/plugins/zsh-histdb/sqlite-history.zsh
+autoload -Uz add-zsh-hook
+
 export QT_QPA_PLATFORMTHEME=gtk2
 
 export PATH=$PATH:/usr/local/go/bin
 
 export PATH="$PATH:$(go env GOPATH)/bin"
-
-source $HOME/.oh-my-zsh/custom/plugins/zsh-histdb/sqlite-history.zsh
-autoload -Uz add-zsh-hook
 
 eval "$(zoxide init zsh)"
