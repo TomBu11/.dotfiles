@@ -25,7 +25,6 @@ dotfiles=(
     .config/neofetch
     .config/nvim
     .config/rofi
-    .config/teamviewer
     .config/tmux
     .config/remmina
     .config/xed
