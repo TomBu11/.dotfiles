@@ -1,6 +1,6 @@
 [submodule ".oh-my-zsh/custom/plugins/zsh-autosuggestions"]
-	path = .oh-my-zsh/custom/plugins/zsh-autosuggestions
+	path = zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
 [submodule ".oh-my-zsh/custom/plugins/zsh-histdb"]
-	path = .oh-my-zsh/custom/plugins/zsh-histdb
+	path = zsh/.oh-my-zsh/custom/plugins/zsh-histdb
 	url = https://github.com/larkery/zsh-histdb
