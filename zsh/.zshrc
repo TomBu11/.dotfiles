@@ -121,8 +121,4 @@ autoload -Uz add-zsh-hook
 
 export QT_QPA_PLATFORMTHEME=gtk2
 
-export PATH=$PATH:/usr/local/go/bin
-
-export PATH="$PATH:$(go env GOPATH)/bin"
-
 eval "$(zoxide init zsh)"
