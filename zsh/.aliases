@@ -1,0 +1,18 @@
+alias vi='nvim'
+
+alias cp='cp -i'
+
+alias d='docker'
+alias dc='docker compose'
+alias dcu='docker compose up -d --build'
+alias dcd='docker compose down'
+alias dcl='docker compose logs -f'
+alias dcs='docker compose stop'
+alias dcsa='docker compose start'
+
+alias c='code'
+
+alias python='python3'
+
+alias trash='gio trash'
+
