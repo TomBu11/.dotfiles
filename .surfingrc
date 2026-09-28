@@ -87,11 +87,3 @@ settings.theme = `
 #sk_status, #sk_find {
     font-size: 20pt;
 }`;
-
-// let iframe = document.querySelector('.tox-tinymce iframe');
-// if (iframe) {
-//     let iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-//     iframeDoc.addEventListener('click', function (event) {
-//         debugger;
-//     });
-// }
