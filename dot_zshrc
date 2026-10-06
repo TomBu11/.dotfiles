@@ -130,9 +130,6 @@ eval "$(zoxide init zsh)"
 eval "$(atuin init zsh --disable-up-arrow --disable-ctrl-r)"
 bindkey '^s' atuin-search
 
-autoload -U compinit
-compinit
-
 bindkey -v
 bindkey '^H' backward-kill-word
 bindkey '5~' kill-word
