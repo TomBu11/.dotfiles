@@ -1,0 +1,9 @@
+set number
+
+inoremap <C-h> <C-W>
+inoremap <C-BS> <C-W>
+inoremap <C-s> <C-o>:w<cr>
+
+tnoremap <Esc> <C-\><C-n>
+
+set clipboard=unnamedplus

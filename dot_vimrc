@@ -1,0 +1,5 @@
+set number
+
+inoremap <C-h> <C-W>
+
+set clipboard=unnamedplus
