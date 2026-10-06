@@ -122,8 +122,6 @@ source $HOME/.oh-my-zsh/custom/plugins/zsh-autocomplete/zsh-autocomplete.plugin.
 
 export QT_QPA_PLATFORMTHEME=gtk2
 export PATH=$PATH:$HOME/.local/bin
-export PATH=$PATH:/usr/local/go/bin
-export PATH="$PATH:$(go env GOPATH)/bin"
 
 eval "$(zoxide init zsh)"
 
