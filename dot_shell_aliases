@@ -1,0 +1,15 @@
+alias vi='nvim'
+
+alias cp='cp -i'
+
+d() { docker "$@"; }
+dc() { d compose ${=DOCKER_COMPOSE_ARGS:-} "$@"; }
+dcu() { dc up -d --build; }
+dcd() { dc down; }
+dcl() { dc logs -f; }
+dcs() { dc stop; }
+
+alias python='python3'
+
+alias trash='gio trash'
+

@@ -1,0 +1,9 @@
+[user]
+	name = Tom
+	email = tom@bull.org.uk
+[init]
+	default = Branch
+	defaultBranch = main
+[core]
+	editor = nvim
+	pager = cat
