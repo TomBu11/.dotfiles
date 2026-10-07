@@ -128,7 +128,6 @@ eval "$(zoxide init zsh)"
 # Initiate atuin
 . "$HOME/.atuin/bin/env"
 eval "$(atuin init zsh --disable-up-arrow --disable-ctrl-r)"
-bindkey '^s' atuin-search
 
 bindkey -v
 bindkey '^H' backward-kill-word
@@ -144,10 +143,12 @@ bindkey -a \
     "^[OB"  .down-line-or-history \
     "^[[B"  .down-line-or-history \
     "/"     .vi-history-search-backward \
-    "?"     .vi-history-search-forward
+    "?"     .vi-history-search-forward \
+    "^S"    atuin-search
 
 bindkey \
     "^[OA"  .up-line-or-history \
     "^[[A"  .up-line-or-history \
     "^[OB"  .down-line-or-history \
-    "^[[B"  .down-line-or-history
+    "^[[B"  .down-line-or-history \
+    "^S"    atuin-search
