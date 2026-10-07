@@ -126,8 +126,10 @@ export PATH=$PATH:$HOME/.local/bin
 eval "$(zoxide init zsh)"
 
 # Initiate atuin
-. "$HOME/.atuin/bin/env"
-eval "$(atuin init zsh --disable-up-arrow --disable-ctrl-r)"
+if command -v atuin >/dev/null 2>&1; then
+  . "$HOME/.atuin/bin/env"
+  eval "$(atuin init zsh --disable-up-arrow --disable-ctrl-r)"
+fi
 
 bindkey -v
 bindkey '^H' backward-kill-word
